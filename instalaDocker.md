@@ -22,3 +22,23 @@ sudo usermod -aG docker $USER
 
 # ⚠️ PARE AQUI: Reinicie o computador agora para validar a permissão.
 ```
+docker build -t meu-app .
+
+NO VS CODE, VOCÊ EXECUTA ASSIM:
+
+1.ABRA O TERMINAL: CTRL + ' (CRASE)
+2.ENTRE NA PASTA DO PROJETO:
+
+cd /home/Repo2026/docker/Manual do Dev/app
+  
+3.COLE UM COMANDO POR VEZ E PRESSIONE ENTER.
+  ORDEM RECOMENDADA:
+
+
+docker images | grep meu-app
+docker rm -f react-app
+docker run --name react-app -p 3000:3000 meu-app
+docker ps | grep react-app
+docker port react-app
+docker logs -f react-app
+curl -I http://localhost:3000
