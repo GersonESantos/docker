@@ -1,4 +1,13 @@
 {
   "editor.formatOnSave": false,
-  "editor.formatOnSaveMode": "modificationsIfAvailable"
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "dockerfile": true,
+    "shellscript": true
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "chat.agent.enabled": true
 }
