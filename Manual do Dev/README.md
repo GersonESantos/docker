@@ -68,4 +68,8 @@ O vídeo do canal **Manual do Dev** apresenta uma introdução prática ao **Doc
 ## Performance/Conclusão
 O vídeo demonstra com sucesso como o Docker resolve o problema de inconsistência de ambientes. Ao final, é apresentada uma aplicação React rodando inteiramente dentro de um container, provando que não é necessário ter o Node.js ou o MySQL instalados diretamente na máquina física para desenvolver, bastando apenas o motor do Docker ativo.
 
-ocker run --name mysql_conteiner -e MYSQL_ROOT_PASSWORD=Gabibi89* mysql:5.7 
+docker run --name mysql_conteiner -e MYSQL_ROOT_PASSWORD=Gabibi89* -p 3306:3306 -d mysql:5.7 
+
+docker ps
+
+ docker stop f3567e178603 
